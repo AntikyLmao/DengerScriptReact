@@ -1,0 +1,41 @@
+.script-display-wrapper{
+    position: absolute;
+    width: 60%;
+    height: fit-content;
+    top: 80px;
+    z-index: 4;
+    left: 50%;
+    translate: -50%;
+}
+
+.script-display-first {
+    position: absolute;
+    scale: 55%;
+    top: 30px;
+    transform: rotate(-15deg);
+    z-index: 5;
+    filter: drop-shadow(-24px 6px 21px rgba(0, 0, 0, 0.78));
+
+}
+
+.script-display-second {
+    position: absolute;
+    scale: 55%;
+    z-index: 6;
+    top: 0px;
+    left: 50%;
+    translate: -50%;
+    -webkit-box-shadow:0px 0px 43px 18px rgba(105,78,212,1);
+    -moz-box-shadow: 0px 0px 43px 18px rgba(105,78,212,1);
+    box-shadow: 0px 0px 43px 18px rgba(105,78,212,1);
+}
+
+.script-display-third {
+    position: absolute;
+    scale: 55%;
+    top: 20px;
+    right: 2%;
+    transform: rotate(15deg);
+    z-index: 5;
+    filter: drop-shadow(24px 6px 21px rgba(0, 0, 0, 0.78));
+}
