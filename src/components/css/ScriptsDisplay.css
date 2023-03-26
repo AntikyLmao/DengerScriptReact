@@ -8,19 +8,21 @@
     translate: -50%;
 }
 
-.script-display-first {
+#first {
     position: absolute;
-    scale: 55%;
+    left: 15%;
+    scale: 40%;
     top: 30px;
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
     z-index: 5;
     filter: drop-shadow(-24px 6px 21px rgba(0, 0, 0, 0.78));
-
+    animation: first 1s ease-in-out .1s forwards;
 }
 
-.script-display-second {
+
+#second {
     position: absolute;
-    scale: 55%;
+    scale: 40%;
     z-index: 6;
     top: 0px;
     left: 50%;
@@ -28,14 +30,51 @@
     -webkit-box-shadow:0px 0px 43px 18px rgba(105,78,212,1);
     -moz-box-shadow: 0px 0px 43px 18px rgba(105,78,212,1);
     box-shadow: 0px 0px 43px 18px rgba(105,78,212,1);
+    animation: second 1s ease-in-out .1s forwards;
 }
 
-.script-display-third {
+#third {
     position: absolute;
-    scale: 55%;
-    top: 20px;
-    right: 2%;
-    transform: rotate(15deg);
+    scale: 40%;
+    top: 10px;
+    right: 18%;
+    transform: rotate(5deg);
     z-index: 5;
     filter: drop-shadow(24px 6px 21px rgba(0, 0, 0, 0.78));
+    animation: third 1s ease-in-out .1s forwards;
+}
+
+
+@keyframes first {
+    from {
+      }
+    
+      to {
+        scale: 55%;
+        top: 30px;
+        left: 0%;
+        transform: rotate(-15deg);
+      }
+    
+}
+@keyframes second {
+    from {
+      }
+    
+      to {
+        scale: 55%;
+      }
+    
+}
+@keyframes third {
+    from {
+      }
+    
+      to {
+        scale: 55%;
+        top: 20px;
+        right: 2%;
+        transform: rotate(15deg);
+      }
+    
 }

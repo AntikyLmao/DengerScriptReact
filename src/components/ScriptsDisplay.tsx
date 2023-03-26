@@ -6,9 +6,9 @@ import "./css/ScriptsDisplay.css";
 function ScriptsDisplay() {
   return (
     <div className="script-display-wrapper">
-      <img className="script-display-first" src={eclipse} />
-      <img className="script-display-second" src={hyrda} />
-      <img className="script-display-third" src={doors} />
+      <img id="first" src={eclipse} />
+      <img id="second" className="script-display-second" src={hyrda} />
+      <img id="third" className="script-display-third" src={doors} />
     </div>
   );
 }
